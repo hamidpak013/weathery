@@ -15,6 +15,7 @@
 		4A257732240E7A630055DA3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A257730240E7A630055DA3F /* LaunchScreen.storyboard */; };
 		4A25773D240E7A630055DA3F /* weatheryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A25773C240E7A630055DA3F /* weatheryTests.swift */; };
 		4A257748240E7A630055DA3F /* weatheryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A257747240E7A630055DA3F /* weatheryUITests.swift */; };
+		4A257756240E7AF80055DA3F /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A257755240E7AF80055DA3F /* NetworkProcessor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4A257743240E7A630055DA3F /* weatheryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weatheryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A257747240E7A630055DA3F /* weatheryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatheryUITests.swift; sourceTree = "<group>"; };
 		4A257749240E7A630055DA3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A257755240E7AF80055DA3F /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				4A257725240E7A610055DA3F /* AppDelegate.swift */,
 				4A257727240E7A610055DA3F /* SceneDelegate.swift */,
 				4A257729240E7A610055DA3F /* ViewController.swift */,
+				4A257755240E7AF80055DA3F /* NetworkProcessor.swift */,
 				4A25772B240E7A610055DA3F /* Main.storyboard */,
 				4A25772E240E7A630055DA3F /* Assets.xcassets */,
 				4A257730240E7A630055DA3F /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 				4A25772A240E7A610055DA3F /* ViewController.swift in Sources */,
 				4A257726240E7A610055DA3F /* AppDelegate.swift in Sources */,
 				4A257728240E7A610055DA3F /* SceneDelegate.swift in Sources */,
+				4A257756240E7AF80055DA3F /* NetworkProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

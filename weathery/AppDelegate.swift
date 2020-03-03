@@ -14,7 +14,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let url = URL(string: "https://api.darksky.net/forecast/5ca6807ad263cc1f48ef5780fffc6edc/37.8267,-122.4233")!
+        let networkProcessor = NetworkProcessor(url: url)
+        networkProcessor.downloadJSONFromURL { (jsonDictionary) in
+            print(jsonDictionary)
+        }
         return true
     }
 
