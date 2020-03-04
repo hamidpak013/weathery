@@ -28,7 +28,7 @@ class NetworkProcessor
                     case 200:
                         if let data = data {
                             do{
-                                let jsonDictionary = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+                                let jsonDictionary = try JSONSerialization.jsonObject(with: data,  options: .mutableContainers)
                                 completion(jsonDictionary as? [String: Any])
                             } catch let error as NSError {
                                 print("Errors processing json data: \(error.localizedDescription)")

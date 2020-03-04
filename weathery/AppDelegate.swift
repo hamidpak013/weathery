@@ -14,10 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let url = URL(string: "https://api.darksky.net/forecast/5ca6807ad263cc1f48ef5780fffc6edc/37.8267,-122.4233")!
-        let networkProcessor = NetworkProcessor(url: url)
-        networkProcessor.downloadJSONFromURL { (jsonDictionary) in
-            print(jsonDictionary)
+        let url = URL(string: "https://api.darksky.net/forecast/af8f1ca416aa038bf3084ce323cf93b3/31.5204,74.3587")
+        if let url = url{
+            let networkProcessor = NetworkProcessor(url: url)
+            networkProcessor.downloadJSONFromURL { (jsonDictionary) in
+                print(jsonDictionary)
+        }
+//        let forcastService = ForcastService(APIKey: "5ca6807ad263cc1f48ef5780fffc6edc")
+//        forcastService.getForcast(latitude: 37.8267, longitude: -122.4233) { (currentWeather) in
+//            print(currentWeather!.humidity!)
         }
         return true
     }
